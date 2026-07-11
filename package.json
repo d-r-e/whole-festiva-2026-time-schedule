@@ -1,0 +1,13 @@
+{
+  "name": "whole-2026-planner",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static WHOLE 2026 timetable and artist planner for GitHub Pages.",
+  "scripts": {
+    "build": "python3 scripts/build_dist.py",
+    "preview": "python3 -m http.server 4173 --directory dist"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

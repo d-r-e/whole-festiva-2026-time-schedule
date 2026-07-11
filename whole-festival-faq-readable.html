@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WHOLE Festival FAQs & Guides - Readable Local Copy</title>
+  <meta name="source" content="https://www.wholefestival.com/faqs">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #faf9f4;
+      --paper: #ffffff;
+      --ink: #181716;
+      --muted: #69645d;
+      --line: #ded8cc;
+      --accent: #1e6ed0;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    a { color: var(--accent); text-decoration-thickness: 0.09em; text-underline-offset: 0.18em; }
+    .page { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 40px 0 64px; }
+    header { margin-bottom: 28px; }
+    .kicker { margin: 0 0 8px; color: var(--muted); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.8rem); line-height: 1.05; letter-spacing: -0.035em; }
+    .intro { max-width: 720px; margin: 18px 0 0; color: #37342f; font-size: 1.04rem; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; padding: 0; list-style: none; }
+    .meta li { border: 1px solid var(--line); background: var(--paper); border-radius: 999px; padding: 5px 11px; color: var(--muted); font-size: 0.88rem; }
+    nav { position: sticky; top: 0; z-index: 3; display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 38px; padding: 10px 0; background: rgba(250, 249, 244, 0.94); }
+    nav a { display: inline-flex; gap: 8px; align-items: center; border: 1px solid var(--line); border-radius: 999px; padding: 7px 11px; background: var(--paper); color: var(--ink); text-decoration: none; font-weight: 650; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; }
+    nav a:hover { border-color: var(--accent); }
+    nav span:not(.nav-type) { color: var(--accent); font-weight: 800; }
+    .nav-type { color: var(--muted); font-size: 0.7rem; font-weight: 800; }
+    .category { scroll-margin-top: 84px; margin: 0 0 44px; }
+    .category-heading { display: grid; gap: 4px; margin-bottom: 14px; border-bottom: 2px solid var(--ink); padding-bottom: 9px; }
+    .label { margin: 0; color: var(--muted); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; }
+    h2 { margin: 0; font-size: clamp(1.45rem, 3vw, 2.35rem); line-height: 1.05; letter-spacing: -0.025em; }
+    .questions { display: grid; gap: 12px; }
+    .qa { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: clamp(16px, 2.6vw, 24px); }
+    h3 { display: flex; gap: 12px; align-items: baseline; margin: 0 0 14px; font-size: clamp(1.05rem, 1.8vw, 1.32rem); line-height: 1.25; letter-spacing: -0.01em; }
+    h3 span { flex: 0 0 auto; color: var(--accent); font-size: 0.78rem; font-weight: 900; letter-spacing: 0.06em; }
+    h4 { margin: 1.2em 0 0.35em; font-size: 1rem; line-height: 1.3; }
+    .answer { max-width: 78ch; color: #24211e; }
+    .answer p { margin: 0 0 1em; }
+    .answer p:last-child { margin-bottom: 0; }
+    .answer ul { margin: 0.75em 0 1.1em; padding-left: 1.25rem; }
+    .answer li { margin: 0.3em 0; }
+    footer { margin-top: 46px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+    @media (max-width: 680px) {
+      body { font-size: 16px; }
+      .page { width: min(100% - 22px, 960px); padding-top: 28px; }
+      nav { position: static; }
+      h3 { display: block; }
+      h3 span { display: block; margin-bottom: 6px; }
+    }
+    @media print {
+      body { background: white; }
+      nav { display: none; }
+      .qa { break-inside: avoid; }
+      .page { width: 100%; padding: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="kicker">Local readable scrape</p>
+      <h1>WHOLE Festival FAQs & Guides</h1>
+      <p class="intro">All FAQ and guide entries from the WHOLE Festival FAQs & Guides page are expanded here and restyled for reading, searching, and printing.</p>
+      <ul class="meta">
+        <li>Source: <a href="https://www.wholefestival.com/faqs">wholefestival.com/faqs</a></li>
+        <li>8 FAQ categories</li>
+        <li>3 guide categories</li>
+        <li>68 total entries</li>
+        <li>46 FAQs</li>
+        <li>22 guides</li>
+        <li>Generated 2026-07-08</li>
+      </ul>
+    </header>
+    <nav aria-label="FAQ and guide categories">
+      <a href="#ticketing"><span class="nav-type">faq</span>TICKETING <span>12</span></a>
+<a href="#cashless"><span class="nav-type">faq</span>CASHLESS <span>2</span></a>
+<a href="#accessibility"><span class="nav-type">faq</span>ACCESSIBILITY <span>12</span></a>
+<a href="#rules-and-eligibility"><span class="nav-type">faq</span>RULES &amp; ELIGIBILITY <span>4</span></a>
+<a href="#infopoint-lostfound"><span class="nav-type">faq</span>INFOPOINT / LostFound <span>3</span></a>
+<a href="#food-and-beverage"><span class="nav-type">faq</span>Food &amp; Beverage <span>2</span></a>
+<a href="#participation"><span class="nav-type">faq</span>PARTICIPATION <span>8</span></a>
+<a href="#solidarity-program"><span class="nav-type">faq</span>SOLIDARITY PROGRAM <span>3</span></a>
+<a href="#camping"><span class="nav-type">guide</span>CAMPING <span>7</span></a>
+<a href="#commute-and-arrival"><span class="nav-type">guide</span>COMMUTE &amp; ARRIVAL <span>12</span></a>
+<a href="#awareness-and-guidelines"><span class="nav-type">guide</span>Awareness &amp; Guidelines <span>3</span></a>
+    </nav>
+    
+      <section class="category" id="ticketing">
+        <div class="category-heading">
+          <p class="label">faq · 12 entries</p>
+          <h2>TICKETING</h2>
+        </div>
+        <div class="questions">
+          
+          <article class="qa">
+            <h3><span>01</span>How do Community Tickets and FLINTA* ticket options work (launching Jan 29)?</h3>
+            <div class="answer"><p>Community Tickets and FLINTA* Community Tickets for WHOLE 2026 launched online on Thursday, January 29 at 4:00 PM CET*<br><br>Community Tickets  are a part of our ongoing commitment to do what we can to offer better access, care, and equity. We set these tickets aside to support people who face systemic, financial, or social barriers to accessing large-scale cultural events. They are an equity tool, not simply a lower price tier, and help keep WHOLE accessible and sustainable year after year.<br><br>This system is based on trust and self-selection:</p>
+<ul><li>Self-selection based on need</li><li>We don’t ask you to prove your need or identity</li><li>Distribution guided by equity &amp; trust</li></ul>
+<p>Community Tickets  (These are now sold out)<br>These are offered at a reduced price for people who need financial support to attend WHOLE. We ask everyone to self-select with intention. If you are able to regularly meet your financial needs, we kindly encourage you to purchase a regular-priced ticket so these options remain available to those who need them most.<br></p>
+<p>FLINTA* Community Tickets (Still available)</p>
+<p>FLINTA* Community Tickets are reserved for women, lesbians, intersex, non-binary, trans, and agender people who need financial support to attend WHOLE. These tickets exist to help create more equitable access for people that are historically marginalized in music and nightlife spaces. We ask applicants to self-select thoughtfully and with care.</p>
+<p><br>Weekend Ticket – FLINTA-Focused* (Still available)<br>Reserved for women, lesbians, intersex, non-binary, trans, and agender people. This tier helps create intentional space for people historically marginalized in music and nightlife. By selecting this ticket, you confirm that you identify within the FLINTA* spectrum. This ticket is offered at a slightly reduced price (compared to the Regular Weekend Ticket). <br></p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>02</span>What other ticket tiers are available on Jan 29, and who are they for?</h3>
+            <div class="answer"><p>Alongside Community and FLINTA* Community Tickets (see above question), a limited number of additional ticket tiers will be available for purchase on January 29.</p>
+<p>These include:</p>
+<ul><li>Regular Weekend Ticket</li></ul>
+<p>The standard ticket for attending WHOLE. Intended for people whose basic needs are met and who have financial stability. Purchasing a Regular Ticket directly supports the festival and helps make Community Tickets possible.</p>
+<ul><li>Weekend Ticket – FLINTA-Focused*</li></ul>
+<p>Reserved for women, lesbians, intersex, non-binary, trans, and agender people. This ticket helps create intentional space for genders historically marginalized in music and nightlife. This tier is not need-based and is offered at a slightly reduced rate compared to the Regular Weekend Ticket.</p>
+<ul><li>Supporter Weekend Ticket</li></ul>
+<p>For those with the financial capacity to give more. Supporter Tickets directly help fund Community Tickets and accessibility initiatives across the festival.</p>
+<ul><li>Sunday Ticket</li></ul>
+<p>For those who can’t attend the full weekend. Sunday Tickets are valid from Sunday morning onward.</p>
+<p>Important note on ticket selection</p>
+<ul><li>All tickets in this release are limited in quantity.</li><li>If Regular Weekend Tickets sell out, we kindly ask that you do not resort to purchasing discounted ticket tiers (such as Community Tickets or FLINTA*-focused tickets) unless you genuinely fit the criteria they are intended for.</li><li>Please do not panic purchase. A next and final ticket release is planned for March, and more Regular Weekend Tickets will become available then. This system relies on trust and collective responsibility to remain fair and accessible for everyone.</li><li>If you plan to come by caravan or car, please make sure to purchase one of those ASAP, as they will sell out eventually.</li><li>If you plan to come by Bassliner bus, secure those tickets now, as they will sell out.</li></ul></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>03</span>Glamping options for WHOLE 2026?</h3>
+            <div class="answer"><p>A refreshed approach for 2026</p>
+<p>This year, we’ve refined how glamping is organised and delivered, with closer coordination from WHOLE’s team and a clear operational structure from planning to breakdown.</p>
+<p>For 2026, we’re working with Festitent, an experienced European festival accommodation provider.</p>
+<p>Together, we’re focused on delivering a smooth experience that reflects the level of care and quality we want to offer at WHOLE.</p>
+<p>Glamping guests will have:</p>
+<ul><li>24/7 support in the glamping area</li><li>A staffed reception point</li><li>Immediate points of contact for urgent circumstances</li></ul>
+<p>We want your stay to feel comfortable and supported from arrival to departure.</p>
+<p>2-6 person accommodation options will be available to suit different needs and budgets.</p>
+<p>Full details and pricing will be available via Festitent when bookings open.</p>
+<p>We’ve refined our approach this year with a new partner, clearer structure, and closer coordination from our team to ensure a smooth, comfortable, and FUN experience!</p>
+<p>Bookings open from 13.02, 12pm CET on <a href="https://www.festitent.com/" target="_blank" rel="noopener noreferrer">festitent.com</a></p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>04</span>What payment methods are accepted for ticket purchases?</h3>
+            <div class="answer"><p>Payment methods provided by our ticketing partner Weeztix include credit/debit card, PayPal, Apple Pay, Google Wallet, and Klarna.  Klarna is a payment option that allows you to split the ticket cost into installments, subject to Klarna’s terms and approval.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>05</span>Who do I contact if I have a ticketing problem?</h3>
+            <div class="answer"><p>For all ticket-related questions or issues, please contact our ticketing provider Weeztix directly:</p>
+<p>support@weeztix.com</p>
+<p><br>This includes:</p>
+<ul><li>Payment issues</li><li>Ticket delivery questions</li><li>Technical errors</li><li>Name changes or access problems related to your ticket</li></ul></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>06</span>What are the available locker sizes, and how can I contact the locker provider ? </h3>
+            <div class="answer"><p>LOCKER SIZES:<br><br>Small Locker + USB</p>
+<ul><li>Dimensions: 25 x 10 x 40 cm</li><li>USB Connection: Includes 2 ports (1 x USB-A and 1 x USB-C)</li></ul>
+<p>Medium Locker</p>
+<ul><li>Dimensions: 25 x 25 x 40 cm</li><li>USB Connection: None</li></ul>
+<p>Medium Locker + USB</p>
+<ul><li>Dimensions: 25 x 25 x 40 cm</li><li>USB Connection: Includes 2 ports (1 x USB-A and 1 x USB-C)</li></ul>
+<p>Large Locker</p>
+<ul><li>Dimensions: 25 x 35 x 40 cm</li><li>USB Connection: None<br><br>For any questions or issues related to locker purchases, please contact our third-party locker provider, Locker Company, directly at info@lockercompany.nl. We’ve worked closely with them for several years, and they’re best equipped to help with order lookups, access issues, or payment questions.<br></li></ul>
+<p>If you’ve already contacted Locker Company and the issue remains unresolved, please reach out to us at info@wholefestival.com, and we’ll do our best to assist.<br></p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>07</span>How can I avoid buying a fake ticket?</h3>
+            <div class="answer"><p>Please only buy resale tickets via our trusted partner Tixel, or directly from someone you personally know and trust.</p>
+<p>As WHOLE has grown, we’ve seen an increase in fraudulent resale attempts on social media. Unfortunately, tickets purchased from unknown or unverified sellers cannot be supported at the gate.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>08</span>When will I receive my ticket?</h3>
+            <div class="answer"><p>WHOLE works with sealed digital tickets via Weeztix to ensure a secure process and prevent fraud or unfair resale.</p>
+<p>Your ticket will be unsealed and available for download literally right before the festival. Exact timing will be shared closer to the event.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>09</span>Do you sell tickets on site?</h3>
+            <div class="answer"><p>No. There are no ticket sales on site.</p>
+<p>You must arrive with a valid pre-purchased ticket or guest list registration.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>10</span>Can I get a refund if I can’t attend?</h3>
+            <div class="answer"><p>Unfortunately not. All ticket sales are final. Like most large-scale festivals, ticket sales directly fund the production of the event — including infrastructure, staffing, and artist fees — which are committed many months in advance. For this reason, refunds are not possible once tickets are purchased.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>11</span>Can I resell my ticket?</h3>
+            <div class="answer"><p>Yes. For 2026, WHOLE works with Tixel as our official ticket resale partner.</p>
+<p>Resale via Tixel is designed to be fair, transparent, and non-speculative. Tickets can be resold at a fixed price set by WHOLE, aligned with our regular ticket pricing at the time resale opens. This approach helps prevent price gouging, discourages profiteering, and keeps resale accessible to the wider community.</p>
+<p>Using Tixel means:</p>
+<ul><li>Sellers can pass on their ticket through a secure, official channel</li><li>Buyers are protected from scams and extreme price inflation</li><li>Community and lower-priced tickets are not turned into profit opportunities</li></ul>
+<p>Resale via Tixel is the only officially supported resale method. We strongly discourage buying or selling tickets via social media, DMs, or unofficial platforms, as we cannot support those tickets at the gate.</p>
+<p>Ticket resale will open no later than June 2026.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>12</span>Who do I contact if I have a question or problem with my locker rental on-site?</h3>
+            <div class="answer"><p>For any questions or issues related to locker rentals, please contact our locker provider directly at info@lockercompany.nl<br></p>
+<p>They are a trusted third-party partner we’ve worked with for several years and are best equipped to assist you quickly. If anything remains unresolved after contacting them, you’re welcome to let us know and we’ll follow up where possible.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="category" id="cashless">
+        <div class="category-heading">
+          <p class="label">faq · 2 entries</p>
+          <h2>CASHLESS</h2>
+        </div>
+        <div class="questions">
+          
+          <article class="qa">
+            <h3><span>01</span>Is WHOLE cashless?</h3>
+            <div class="answer"><p>Yes. WHOLE operates a cashless payment system for food, drinks, and most on-site services.</p>
+<p>All information can be found on this separate page: <a href="https://www.wholefestival.com/cashless" target="_blank" rel="noopener noreferrer">https://www.wholefestival.com/cashless</a></p>
+<p>Please note that some designers at the design market may use their own tap-to-pay, PayPal, or cash systems.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>02</span>How do I get a refund for my remaining balance?</h3>
+            <div class="answer"><p>At the end of the festival, you must initiate the refund process yourself through our cashless portal to get your remaining balance back. The refunds are not processed automatically. You must initiate the process.</p>
+<p>If you still have an outstanding balance from 2025 and need assistance with a late refund, please write to:</p>
+<p>cashless@wholefestival.com</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="category" id="accessibility">
+        <div class="category-heading">
+          <p class="label">faq · 12 entries</p>
+          <h2>ACCESSIBILITY</h2>
+        </div>
+        <div class="questions">
+          
+          <article class="qa">
+            <h3><span>01</span>Is WHOLE accessible for wheelchair users? Are there any accessibility limitations on site?</h3>
+            <div class="answer"><p>We aim to make WHOLE as accessible as possible, while being transparent about the site’s limitations.<br></p>
+<p>Accessible camping is located in the main campground and includes barrier-free toilets and showers, as well as close proximity to wheelchair-accessible shuttle stops. The on-site festival shuttle runs most of the weekend and is wheelchair accessible.<br></p>
+<p>That said, WHOLE takes place on a former industrial site with uneven terrain. Some areas — especially sandy beaches, natural lakeshores, and certain paths on the peninsula (stage area) — are not fully wheelchair accessible. Accessibility can also vary depending on weather and ground conditions.</p>
+<p>Please also note that Ferropolis does not allow assistance dogs or any animals on-site, due to high sound levels and overall site regulations.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>02</span>Is there a shuttle service on-site? </h3>
+            <div class="answer"><p>Our free on-site shuttle is wheelchair accessible and runs throughout the weekend, connecting Car Parking, Fußgängerbrücke (Footbridge) / Glamping, the Main Entrance, and the Peninsula.</p>
+<p>Shuttle service operates as follows:</p>
+<ul><li>From Friday 09:30, two shuttle buses run between Car Parking, Fußgängerbrücke / Glamping, and the Main Entrance.</li><li>From Friday 14:00, the route is extended to include the Peninsula (stage area).</li><li>Shuttle service continues throughout the weekend, with additional capacity during peak arrival, departure, and nighttime hours.</li><li>At least one shuttle operates continuously until Monday 18:00.</li><li>The shuttle is provided free of charge. While we do our best to keep service running smoothly, occasional short pauses may be necessary for refueling, driver breaks, or operational needs. We appreciate your patience and understanding.</li></ul></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>03</span>Are Bassliner shuttles wheelchair accessible?</h3>
+            <div class="answer"><p>Bassliner shuttle routes from Dessau and Gräfenhainichen are wheelchair accessible.</p>
+<p>For all other routes, foldable wheelchairs can usually be placed in the luggage compartment, depending on space availability. We recommend contacting Bassliner Support before booking to confirm arrangements.<br><br>Email: buero@bassliner.org</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>04</span>Do you offer a companion pass?</h3>
+            <div class="answer"><p>If you have a disability card and have purchased a ticket, you’re welcome to write to us — we’re happy to extend one free companion pass to your accompanying person to help you out.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>05</span>Who can I contact with access-related questions?</h3>
+            <div class="answer"><p>For any accessibility-related questions or specific needs, please contact:</p>
+<p>access@wholefestival.com</p>
+<p>Reaching out by June is especially helpful, as it gives us enough time to prepare and accommodate you as best as possible.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>06</span>What if I need to bring medication or it needs to be refrigerated?</h3>
+            <div class="answer"><p>Please bring all medication in its original packaging. If you are carrying controlled substances, injectable medication (such as insulin or epinephrine), or larger quantities of medication, we recommend bringing a doctor's note or medical certificate to help avoid delays during security checks.</p>
+<p>If you require refrigerated medication, please visit the Info Point at campsite upon arrival. Please clearly label all items with your name and contact information.<br><br></p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>07</span>How do I check in if I need accessibility support?</h3>
+            <div class="answer"><p>If you're arriving by Bassliner or taxi, go to the guestlist check-in at the main guest entrance to collect your wristband. Our Awareness Team (wearing pink vests) or security staff can help you avoid queues and guide you through the process.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>08</span>Is accessible parking available? Can I park my car directly at the accessible camping area?</h3>
+            <div class="answer"><p>Is accessible parking available?</p>
+<p>Yes. Reserved accessible parking spaces are available in both the Car Parking area and the Caravan Sleeping Area.<br></p>
+<p>Can I park my car directly at the accessible camping area?</p>
+<p>No. Cars cannot remain parked at the accessible camping area. However, you can drive there to unload. Please inform security at the caravan entrance that you need access to the accessible camping area. You will be escorted there and can then park in the nearby accessible parking area (approximately 120 meters away).</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>09</span> Are there quiet or low-stimulation spaces available?</h3>
+            <div class="answer"><p>Please be aware that some festival areas may feature flashing/strobe lights, intense sound systems, or visual effects. Whether you need a sensory break, a place to decompress, or prefer a substance-free space, we’ve created several areas designed for calm and clarity:</p>
+<p>Quiet Camping Area: If you prefer a low-noise sleeping environment, find the Quiet Camping Area on the map.</p>
+<p>Sober Space: A dedicated area for folks who are sober, sober-curious, or simply want to take a break from substances.</p>
+<p>Awareness Tents: Our Awareness tents offer a low-stimulation environment, stim toys and calming items for neurodivergent attendees, soft lighting and quiet seating areas as well as support staff if you need to talk or decompress.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>10</span>Can I charge my wheelchair, CPAP machine, or other medical equipment?</h3>
+            <div class="answer"><p>If you need to charge a wheelchair, CPAP machine, or other medically necessary equipment during the festival, please get in touch with the Accessibility Team at access@wholefestival.com before your arrival. <br><br>We will do our best to find a suitable solution.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>11</span>Are assistance/service dogs allowed?  No animals are allowed on site.</h3>
+            <div class="answer"><p>Due to the high level noise on the festival site, Ferropolis does not allow animals on site.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>12</span> Can friends camp with me in the accessible camping area?</h3>
+            <div class="answer"><p>Yes. Friends, partners, and support persons are welcome to camp with you in the accessible camping area.</p>
+<p>However, we kindly ask everyone staying in this area to be mindful of the needs of other campers by:</p>
+<ul><li>Leaving the front rows closest to the facilities for wheelchair users and people with limited mobility</li><li>Keeping pathways clear of tents and cords</li><li>Maintaining a quieter atmosphere, especially during nighttime hours, for those who rely on a low-stimulation environment</li></ul></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="category" id="rules-and-eligibility">
+        <div class="category-heading">
+          <p class="label">faq · 4 entries</p>
+          <h2>RULES &amp; ELIGIBILITY</h2>
+        </div>
+        <div class="questions">
+          
+          <article class="qa">
+            <h3><span>01</span>Who can attend?</h3>
+            <div class="answer"><p>WHOLE is a queer festival that centers and prioritizes LGBTQIA+ communities. Allies are welcome, with the understanding that this is a queer-led space shaped by queer culture, care, and values. We welcome everyone who arrives with an open heart, mutual respect, and a willingness to take care of one another.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>02</span>Is WHOLE an 18+ event?</h3>
+            <div class="answer"><p>Yes. WHOLE is strictly 18+.</p>
+<p>A valid government-issued ID is required. No children are allowed.<br><br></p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>03</span>Are pets allowed?</h3>
+            <div class="answer"><p>No, Ferropolis does not allow this. Animals are not permitted on site.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>04</span>Does WHOLE happen rain or shine?</h3>
+            <div class="answer"><p>Yes. WHOLE takes place rain or shine.</p>
+<p>No refunds will be issued due to weather conditions. Please plan accordingly.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="category" id="infopoint-lostfound">
+        <div class="category-heading">
+          <p class="label">faq · 3 entries</p>
+          <h2>INFOPOINT / LostFound</h2>
+        </div>
+        <div class="questions">
+          
+          <article class="qa">
+            <h3><span>01</span>Where are the Info Points and what is there? </h3>
+            <div class="answer"><p>There are two Info Points on-site:</p>
+<ul><li>Main Entrance (Campground, Main Entrance)</li><li>Peninsula (Next to Lockers, Before Food Court)</li></ul>
+<p>The Info Points are here to answer questions, provide practical assistance, and connect guests with the right team or service when needed.</p>
+<p>Services include:</p>
+<ul><li>Lost &amp; Found</li><li>General festival information and directions</li><li>Refrigerated medication registration and storage</li><li>No-photo wristbands for guests who prefer not to appear in official festival photography</li><li>Cigarette Sales</li><li>Cashless Help Desk</li></ul></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>02</span>What should I do if I lose something during the festival?</h3>
+            <div class="answer"><p>If you find an item, please bring it to one of the Info Points (Peninsula &amp; Camping).</p>
+<p>If you’ve lost something, check with the Info Points first.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>03</span>What happens to lost items after the festival?</h3>
+            <div class="answer"><p>By law, all personal items of value must be handed over to the local lost and <a href="https://www.graefenhainichen.de/fundbuero/" target="_blank" rel="noopener noreferrer">found office in Gräfenhainichen</a>:<br></p>
+<p>Email: fundbuero@graefenhainichen.de</p>
+<p><br>This includes:</p>
+<ul><li>Phones</li><li>ID cards</li><li>Credit cards</li><li>High-value jewelry or glasses</li><li>Other clearly identifiable items</li></ul>
+<p>Everything else (e.g. caps, costume jewelry, sunglasses) will be stored at the Ferropolis lost and found:</p>
+<p>info@ferropolis.de<br></p>
+<p>Sorry — we cannot bring items back to Berlin.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="category" id="food-and-beverage">
+        <div class="category-heading">
+          <p class="label">faq · 2 entries</p>
+          <h2>Food &amp; Beverage</h2>
+        </div>
+        <div class="questions">
+          
+          <article class="qa">
+            <h3><span>01</span>Can I bring my own food?</h3>
+            <div class="answer"><p>Yes. You’re welcome to bring your own food to WHOLE.  We ask that you leave full blown meal setups for the campsite and only bring snacks to the peninsula.</p>
+<p>Please note that glass containers are not permitted anywhere on site.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>02</span>Will there be vegan &amp; gluten free options?</h3>
+            <div class="answer"><p>Yes. WHOLE works with a variety of food vendors to provide both vegan and gluten free options.<br><br>If you have a strict medical diet or severe allergies, we recommend planning ahead and bringing some of your own essential supplies to ensure you're fully covered and comfortable throughout the weekend.<br></p>
+<p>More details about food vendors will be shared closer to the event.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="category" id="participation">
+        <div class="category-heading">
+          <p class="label">faq · 8 entries</p>
+          <h2>PARTICIPATION</h2>
+        </div>
+        <div class="questions">
+          
+          <article class="qa">
+            <h3><span>01</span>What is the policy around consent &amp; photography and video content? </h3>
+            <div class="answer"><p>$14<a href="https://drive.google.com/file/d/1KpghTrPyJhy608tsG9cgDkL1-MReumas/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</a><br>.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>02</span>Can I volunteer at WHOLE?</h3>
+            <div class="answer"><p>Yes. But we are no longer looking for Volunteers for WHOLE Festival 2026, applications closed 27th March 2026.<br><br>Please note that submitting a volunteer application does not guarantee a volunteer spot. Due to limited positions, we are unable to accept everyone who applies.<br><br>If attending the festival is very important to you, we strongly recommend purchasing a ticket rather than relying on a volunteer application, as volunteer placements are confirmed on a limited basis. Our goal is to inform all applicants by the time the final round of tickets goes live.<br></p>
+<p>Please also note that tickets purchased prior to being accepted as a volunteer cannot be refunded, in line with our no-refund policy. However, tickets can be resold to trusted friends via your personal networks or via Tixel, our official resale partner.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>03</span>When will I hear back about the WHOLE 2026 Open Call?</h3>
+            <div class="answer"><p>The WHOLE 2026 Open Call closed on January 31, 2026. Everyone who applied through the open call will receive a response before the final ticket tier is released in March 2026. Please note: this open call does not include DJ or performance stage bookings. All applicants will be contacted by email once the review process is complete, regardless of the outcome.</p>
+<p>This includes submissions for:</p>
+<ul><li>Installations</li><li>Spatial interventions</li><li>Exhibitions</li><li>Stage or site design proposals</li><li>Creative experiences or participatory formats</li></ul>
+<p>Please note that submissions for the Workshop and Design Market Open Call is separate and the applicants will hear back later than the WHOLE 2026 Open Call due to the submissions closing later.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>04</span>What is the Workshop Open Call &amp; Design Market Open Call?</h3>
+            <div class="answer"><p>This Open Call is now closed<br><br>The application form was open until February 28, 2026. All applicants will receive an email response regarding their submission by March 31, 2026.<br><a href="https://forms.gle/o7kysq89A41t8cqW6" target="_blank" rel="noopener noreferrer">https://forms.gle/o7kysq89A41t8cqW6</a></p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>05</span>Can I perform at WHOLE?</h3>
+            <div class="answer"><p>Thanks so much for reaching out and for wanting to share your work with WHOLE.<br></p>
+<p>Our music and performance program (including DJs and live acts) is largely curated and booked internally, so we’re generally not open to submissions in those areas. That said, we’re always happy to learn about artists, performers, collectives, and creative practices, and to keep that information on file for future consideration.<br></p>
+<p>We’re also open to hearing from people working across other areas of festival-making, including (but not limited to): food vendors and bar partners, light installations and visual art, technical crews, video mappers and AV specialists, stage-building teams, spatial designers, and other creative or production-related collaborations.<br></p>
+<p>This form serves as a central place for the many people who write to us about getting involved with WHOLE in different ways. Due to the high volume of inquiries, we’re not able to respond to every submission individually.<br></p>
+<p>Please note: this form is not intended for applications to the Solidarity Program, Community Tickets, volunteer roles, Awareness roles, or other employment opportunities. These are announced separately via our official channels.<br></p>
+<p>Due to the high volume of submissions, we’re not able to respond to every submission individually.<br><br><a href="https://forms.gle/EmvDKRNT9qdz1Fpk8" target="_blank" rel="noopener noreferrer">Submit here</a></p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>06</span>Are there any open job positions for WHOLE Festival 2026?</h3>
+            <div class="answer"><p>Yes there are!  We’re looking for part-time freelance collaborators to join our production team for this edition in the following positions:</p>
+<p>- Junior Production Manager &amp; Accreditation Manager</p>
+<p>- Production Manager Guest Relations &amp; Entrance Management</p>
+<p>At WHOLE, we thrive on creativity, community, and collaboration. Working with us means being part of a team that values individuality, innovation, and queer culture at its core.</p>
+<p>We’re looking for people based in Berlin.</p>
+<p>Submissions accepted through this <a href="https://forms.gle/SUt5v4hoWxCucsxC9" target="_blank" rel="noopener noreferrer">link </a>until 18:00 Monday March 09.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>07</span>What is the Content Creator Open Call?</h3>
+            <div class="answer"><p>This Open Call is now closed, Deadline: March 23, 2026</p>
+<p>All applicants will be contacted by email once the review process is complete, regardless of the outcome.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>08</span>How do I apply to the awareness Open Call?</h3>
+            <div class="answer"><p>We are excited to bring together a strong, diverse and qualified awareness team to create an unforgettable community experience and ensure the well-being of our guests.</p>
+<p>If you’d like to be part of this team, you can apply through <a href="https://wholefestival.festiware.app/en/register/Whole26-awareness" target="_blank" rel="noopener noreferrer">this form</a> until May 7, 2026. This year we’re restructuring our awareness team, and guest-facing awareness roles will no longer be filled by volunteers. This open call is directed only to experienced awareness workers.</p>
+<p>Please note that team members must be available and flexible between July 17–20, 2026 for 2 shifts á 6 hours (7 hours for Leads) with minimum 12 h break in-between. Due to the size and complexity of the team, shift swaps will generally not be possible, and we may not be able to accommodate all scheduling preferences. In special cases, we will of course do our best to find a solution.</p>
+<p>If you have applied to this open call, you should hear back if you are succesful by 30.05</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="category" id="solidarity-program">
+        <div class="category-heading">
+          <p class="label">faq · 3 entries</p>
+          <h2>SOLIDARITY PROGRAM</h2>
+        </div>
+        <div class="questions">
+          
+          <article class="qa">
+            <h3><span>01</span>What is the Solidarity Program and who is it for?</h3>
+            <div class="answer"><p>The Solidarity Program is for members of the queer community who are most impacted by systemic and economic inequalities and might not otherwise be able to attend WHOLE. Our aim is to support people who experience structural marginalization in multiple ways.<br></p>
+<p>We are prioritizing applications from refugees, Black and POC folks, trans and gender-expansive people, people with disabilities, and others whose bodies are marginalized or excluded. You do not need to fit every category listed to apply.<br></p>
+<p>Due to limited funding, the program is currently only available to residents of EU countries. We hope in the future to extend the program to queer folks around the world.</p>
+<p>Applications for 2026 Solidarity Program are now closed.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>02</span>What does the Solidarity Program include?</h3>
+            <div class="answer"><p>Awardees will receive:</p>
+<ul><li>A festival ticket</li><li>Bus tickets to and from the festival (via Bassliner)</li><li>A €100 food and drink allowance</li><li>Camping gear for participants traveling from outside of Germany</li></ul>
+<p>Additional travel support:</p>
+<ul><li>€250 travel contribution for those traveling from outside Germany</li><li>€50 travel contribution for those traveling within Germany but outside Bassliner departure cities<br><br>Applications for 2026 Solidarity Program are now closed.</li></ul></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>03</span>How does the application and selection process work?</h3>
+            <div class="answer"><p>We’ve reached the maximum number of applications, and the Solidarity Program application for WHOLE 2026 is now closed. Thank you to everyone who applied and took the time to share their experiences with us. The application form is no longer available online.</p>
+<p>The application asked for details about applicants and their financial situation. Demographic questions help us understand applicants’ experiences of structural oppression so we can distribute support as equitably as possible.<br></p>
+<p>A jury of four members from Berlin’s queer community will review the applications anonymously (names are removed). Decisions are based on applicants’ written answers, with the aim of supporting those for whom this initiative makes WHOLE more accessible.</p>
+<p>For 2026, we are offering 100 Solidarity Awards. The selection process is based on trust. All applicants will receive a response by 2 April 2026.<br></p>
+<p>Thank you again to everyone who applied.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="category" id="camping">
+        <div class="category-heading">
+          <p class="label">guide · 7 entries</p>
+          <h2>CAMPING</h2>
+        </div>
+        <div class="questions">
+          
+          <article class="qa">
+            <h3><span>01</span>General info</h3>
+            <div class="answer"><ul><li>Camping is included with your ticket. You’ll need to bring or rent your own setup.</li><li>The main campground is separate from the stage area. Expect a 15+ minute walk from the campground entrance to the peninsula (stages). The free on-site festival shuttle will return &amp; run mostly all weekend.</li><li>A designated Quiet Camp area is sectioned off in the back corner for those looking to catch some ZZZs.</li><li>Please be mindful of noise at night. No Bluetooth parties. Please save loud music for the dancefloors.</li><li>The best life is camp life. Bring snacks to share, decorate your space, and get to know the people around you. Festival magic happens in the small moments, and a little effort goes a long way.</li></ul>
+<h4>Facilities</h4>
+<ul><li>All camping facilities are located within the main campground, including toilets and additional Dixi toilets across the site, showers (€4.50, cashless payment), large sink stations, the legendary Douche Station (€6.00, cashless payment), and multiple water refill points.</li></ul>
+<p>Shower and Douche Station fees help cover the cost of renting the facilities, installing temporary plumbing and water infrastructure, and maintaining them throughout the festival.</p>
+<p>Please note that with thousands of guests using the showers, especially during peak hours, hot water cannot be guaranteed. If a hot shower is important to you, we recommend avoiding the busiest morning and evening periods.</p>
+<ul><li>Might we suggest bringing your own toilet paper, soap, and hand sanitizer. We do our best to restock and support facilities in real time, but it’s always helpful to be a little self-sufficient, as we can’t provide an endless supply.</li><li>Fun fact: Last year we went through an absolutely unhinged amount of toilet paper — the kind usually seen at festivals three times our size. We stock and regularly restock toilet paper throughout the weekend, but with thousands of people on site there may be moments when supplies temporarily run low. Bringing a spare roll for your camp is a small move that can save the day.</li></ul></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>02</span>Accessibility &amp; Barrier-Free Camping</h3>
+            <div class="answer"><ul><li>Accessible camping is located in the main campground and includes barrier-free toilets and showers, as well as close proximity to shuttle stops.</li><li>The free on-site festival shuttle runs all weekend, is wheelchair accessible, and stops near the Fußgängerbrücke (Footbridge), close to accessible camping, Glamping, and Utopia Camp.</li><li>Bassliner shuttle routes from Dessau and Gräfenhainichen are wheelchair accessible. For all other routes, foldable wheelchairs can usually be placed in the luggage compartment, depending on space availability. We recommend contacting Bassliner Support before booking to confirm arrangements.</li><li>If you have a disability card and have purchased a ticket, you’re welcome to write to us — we’re happy to extend one free companion pass to your accompanying person to help you out.</li><li>Please note that some beaches and sandy areas are not fully wheelchair accessible, and assistance dogs (as well as all animals) are not permitted due to high sound levels.</li><li>For any access-related questions, please contact access@wholefestival.com. Reaching out by June is especially helpful so we have enough time to prepare and accommodate you properly.</li><li>For more info on the topic of Accessibility, please see our FAQ.</li></ul></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>03</span>Utopia  — Rent Camping Gear </h3>
+            <div class="answer"><ul><li>We partner with Utopia to offer a more sustainable way to camp. Instead of producing new tents, Utopia rescues, repairs, and reuses quality tents left behind at other festivals.</li><li>Rent tents and basic camping gear on site</li><li>Skip traveling with bulky equipment</li><li>Eco-friendly approach focused on reuse</li><li>Limited availability, <a href="https://utopia-camping.com/product/tent-for-whole-festival/" target="_blank" rel="noopener noreferrer">so book through Utopia now</a><br><br><br>Utopia Bookings: Transfers &amp; Cancellations<br><br>Update:  June 18 - We are looking to see if Utopia can be added to Tixel, our official resale partner.  Check back for more updates.</li></ul>
+<h4>Can I transfer my Utopia booking to a friend?</h4>
+<p>Yes! If you want to pass your booking along to a friend, please follow these steps:</p>
+<p>Email Utopia: Send an email to info@utopia-camping.com and make sure to CC your friend.</p>
+<p>Provide details: Clearly state that you want to transfer the booking and include your friend's full name.</p>
+<p>Confirm the deposit rule: Because payment details cannot be changed in the system, the security deposit will always be refunded to the original buyer's account. Your friend must reply to the email thread confirming they understand and accept this.</p>
+<p>Once everyone confirms, Utopia will update the booking, issue a new confirmation and QR code to your friend, and deactivate the old one.</p>
+<h4>Can I sell my booking to someone I don't know?</h4>
+<p>Utopia strongly advises against selling or transferring your booking to a stranger.</p>
+<p>Because the system cannot change the original payment details, the security deposit will always be automatically refunded to the original buyer. This creates a high risk for financial disputes between buyers and sellers that Utopia cannot manage or resolve.</p>
+<h4>I can no longer attend. Can I cancel my booking?</h4>
+<p>If the booking is still eligible for a cancellation under Utopia's terms, it can be cancelled to return the tent to the inventory.</p>
+<p>Please note that for high-demand events (like WHOLE), cancelled tents automatically go back onto Utopia's website for anyone to book. Utopia cannot &quot;hold&quot; or reserve a cancelled tent for a specific person.<br><br></p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>04</span>GLAMPING</h3>
+            <div class="answer"><p>A refreshed approach for 2026</p>
+<p>This year, we’ve refined how glamping is organised and delivered, with closer coordination from WHOLE’s team and a clear operational structure from planning to breakdown.</p>
+<p>For 2026, we’re working with Festitent, an experienced European festival accommodation provider.</p>
+<p>Together, we’re focused on delivering a smooth experience that reflects the level of care and quality we want to offer at WHOLE.</p>
+<p>Glamping guests will have:</p>
+<ul><li>24/7 support in the glamping area</li><li>A staffed reception point</li><li>Immediate points of contact for urgent circumstances</li></ul>
+<p>We want your stay to feel comfortable and supported from arrival to departure.</p>
+<p>2-6 person accommodation options will be available to suit different needs and budgets.</p>
+<p>Full details and pricing will be available via Festitent when bookings open.</p>
+<p>We’ve refined our approach this year with a new partner, clearer structure, and closer coordination from our team to ensure a smooth, comfortable, and FUN experience!</p>
+<p>Bookings open from 13.02, 12pm CET on <a href="https://www.festitent.com/" target="_blank" rel="noopener noreferrer">festitent.com</a></p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>05</span>WHAT TO PACK</h3>
+            <div class="answer"><p>Expect a 15+ minute walk between camping and the stages. Pack a small day bag to carry with to the peninsula (or put in your locker) for anything you’ll want away from camp. Be prepared for hot sun, cool nights, and possible rain. Layers are key.</p>
+<p>ESSENTIALS</p>
+<ul><li>Festival ticket (download before arrival and have it ready at entry)</li><li>Cashless account (set up in advance and top up to avoid queues)</li><li>Festival app installed</li><li>€10 Trash deposit</li></ul>
+<p>CAMPING GEAR</p>
+<ul><li>Tent</li><li>Sleeping bag</li><li>Air mattress + pump</li><li>Pillow + blanket</li><li>Camping chair</li><li>Shade tarp or canopy</li><li>Solar-powered or battery lantern</li><li>Earplugs + eye mask</li></ul>
+<p>DAY BAG FOR THE PENINSULA</p>
+<p>(To take to the stages )</p>
+<ul><li>Refillable non-glass water bottle</li><li>Energy bars</li><li>Earplugs</li><li>Sunscreen (lake-safe / biodegradable)</li><li>Sunglasses + hat</li><li>Lip balm with SPF</li><li>Wet wipes</li><li>Toilet paper / tissues</li><li>Beach blanket or quick-dry towel</li><li>Portable phone charger (there will be some on-site to rent)</li><li>Lightweight rain poncho</li><li>Hand sanitizer</li></ul>
+<p>CLOTHING &amp; FOOTWEAR</p>
+<ul><li>Comfortable dancing shoes (not brand new)</li><li>Extra socks + underwear</li><li>Weather-appropriate layers (tank tops, hoodie, waterproof jacket)</li><li>Light rain gear</li><li>Swimsuit (or not — go naked)</li><li>Cozy sleepwear</li><li>Sunhat</li><li>Fan</li><li>Clean, dry outfit for the journey home</li></ul>
+<p>HYGIENE &amp; SELF-CARE</p>
+<ul><li>Toothbrush + toothpaste</li><li>Biodegradable soap + shampoo</li><li>Hygiene products + medications (if meds need to be refridgerated, check in at the Info Point)</li><li>Condoms and other safer sex supplies (including PrEP)</li><li>Lube</li><li>Prescription meds (with label)</li><li>Electrolyte powder or vitamin supplements</li></ul></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>06</span>Planning to Sleep / Camp in your Car or Caravan?</h3>
+            <div class="answer"><p>If you plan to sleep in an RV, caravan, campervan, van, car, or use your vehicle as part of your campsite setup, you must purchase a valid Caravan Camping Pass. This pass is required for any vehicle that will be used for overnight accommodation, regardless of its size or type.</p>
+<p><br>Please see Commute &amp; Arrival section for more details about arriving &amp; camping in your vehicle.<br></p>
+<p>Caravan Camping passes are sold out. You can try to find one via Tixel, our official resale partner.</p>
+<p>Important details:</p>
+<ul><li>If you plan to sleep in an RV, caravan, campervan, van, or car, you must purchase a Caravan Camping Pass. These vehicles are parked in the designated Caravan Camping area next to the main campground. Upon arrival, follow the signs marked CARAVAN CAMPING.</li><li>Vehicles without a Caravan Camping Pass may not be slept in or used as part of a campsite setup. These vehicles must purchase a standard Car Parking Pass and park in the NEW OUTFIELD ARRIVAL Car Parking area. This is in an  area across the main B107 street which is new this year. Please see Commute &amp; Arrival section for more details.</li><li>There are no power or water hookups</li><li>Generators are not allowed</li><li>RVs and caravans must remain parked for the duration of the weekend due to vehicle size and active campsite safety conditions. If you need to leave earlier than Monday morning, inform the parking attendants</li><li>When coming by vehicle, it's best to plan ahead and ensure you have a weekend-long sober driver for the return journey home</li></ul></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>07</span>WHAT NOT TO BRING</h3>
+            <div class="answer"><p>ITEMS TO LEAVE AT HOME</p>
+<ul><li>Glass containers</li><li>Weapons of any kind (including knives, pepper spray, or items intended as weapons). In regards to a camp knife for cooking purposes, a folding knife with a blade under 12 cm (4.7 in) is generally allowed for campsite use</li><li>Fireworks or flares (strictly forbidden)</li><li>Drones (unauthorized aerial recording is not allowed)</li><li>Generators, especially those running on gas, diesel or propane fuel, which are not only loud for camping neighbors, but emit harmful fumes<br><br>•	For camp stoves, please only bring small gas canisters; containers over  450g are not permitted for fire safety reasons.</li><li>Excessive amounts of alcohol</li><li>Illegal substances (local laws apply)</li><li>Large sound systems or large Bluetooth speakers</li><li>Glitter or non-biodegradable confetti</li><li>Plastic straws and single-use plastics</li><li>Heavy or oversized furniture</li><li>Animals / pets - Per Ferropolis site regulations, pets and assistance dogs are not permitted on the festival grounds due to the high decibel levels and the safety of the animals.</li><li>Professional recording equipment (you must have pre-approved authorization)</li></ul></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="category" id="commute-and-arrival">
+        <div class="category-heading">
+          <p class="label">guide · 12 entries</p>
+          <h2>COMMUTE &amp; ARRIVAL</h2>
+        </div>
+        <div class="questions">
+          
+          <article class="qa">
+            <h3><span>01</span>ARRIVAL BASICS</h3>
+            <div class="answer"><p>WHOLE takes place at Ferropolis, around 140 km southwest of Berlin. Planning ahead is essential. Far from the reach of Berlin’s U-Bahn lines and the ease of a late-night Lime Scooter, Ferropolis requires a bit more planning. Please organize your travel in advance. Winging it during the closing set is, well, chaotic. <br></p>
+<p>Festival Address:<br>Ferropolisstraße 1<br>06773 Gräfenhainichen<br>Germany<br></p>
+<ul><li>Campground gates open Friday morning, July 17 at 10:00</li><li>Early arrival is not legally possible, as the site remains an active construction zone until Friday. Please do not arrive on Thursday night expecting to camp. We’re only able to welcome guests from Friday onward.</li><li>Arrive with a valid ticket or guest list registration downloaded on your phone<br><br><br>GENERAL HOURS</li><li>Campground officially opens: Friday 10:00</li><li>Peninsula (stages) opens: Friday 14:00</li><li>Sunday Ticket entry begins: Sunday 06:00</li><li>Peninsula (Arena stage) closes: Monday 07:00</li><li>Campground closes: Monday 18:00<br></li></ul>
+<p>2026 Entry Updates: We are making improvements to address last year's delays</p>
+<ul><li>New for 2026: Car Parking and Caravan Camping are now split into two separate arrival areas to improve traffic flow. Car Parking is located off-site, directly across the main road B107, while Caravan Camping remains on-site next to the campground. More details below.</li><li>We’ve expanded bag check capacity and brought on an experienced entrance manager who knows the site inside and out.</li></ul>
+<p>What to Expect</p>
+<ul><li>Queues and some wait time are inevitable during peak arrival hours on Friday. We appreciate your patience — taking the time to do thorough checks at the gate helps ensure a smoother, safer, and more relaxed experience for everyone once inside.</li><li>The main guest entrance generally moves more at a faster pace, while caravan camping arrivals may take longer due to checking not only people, but also the vehicles. We have increased the number of intake lanes for the caravan entrance.</li><li>You may leave and re-enter the festival. Please keep your wristband on and expect a security check upon return.</li><li>Thank you for your patience and care — a smoother arrival sets the tone for a safer, more open festival experience for everyone.</li></ul></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>02</span>Which entrance do guests use?</h3>
+            <div class="answer"><p>Main Entrance<br>Use the Main Entrance if you arrive by:</p>
+<ul><li>Bassliner shuttle bus</li><li>Licensed taxi</li><li>Free guest shuttle from NEW OUTFIELD ARRIVAL</li></ul>
+<p>Most guests complete festival check-in at the Main Entrance. This is where your ticket is scanned, your wristband is issued, your bag is checked, and you pay the €10 trash deposit.</p>
+<p>NEW OUTFIELD ARRIVAL → Free Guest Shuttle → Main Entrance<br>Use NEW OUTFIELD ARRIVAL first if you are:</p>
+<ul><li>Parking a car for the weekend</li><li>Being dropped off by friends or family / Kiss &amp; Ride</li><li>Arriving on foot from Gräfenhainichen or nearby</li></ul>
+<p>Important: NEW OUTFIELD ARRIVAL is not the festival entrance. After parking or being dropped off, you will take the free guest shuttle to the Main Entrance and complete festival check-in there.</p>
+<p>Please do not walk along the road to the Main Entrance.</p>
+<p>Caravan Camping Entrance<br>Use the Caravan Camping Entrance if you are:</p>
+<ul><li>Sleeping in a vehicle</li><li>Using your vehicle as part of your campsite setup</li><li>Arriving by bicycle</li></ul>
+<p>This includes cars, vans, campervans, caravans, and RVs. If you plan to sleep in any vehicle, you need a valid Caravan Camping Pass.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>03</span>MAIN ENTRANCE</h3>
+            <div class="answer"><p>The Main Entrance is the primary arrival point for the majority of festival guests. It is connected to the parking lot where Bassliner shuttles arrive/depart. <a href="https://maps.app.goo.gl/9qgtFqRpyPVTGdSb7" target="_blank" rel="noopener noreferrer">Google Pin</a></p>
+<p>Arrivals by:	<br>-Bassliner shuttle bus	<br>-Taxi<br>-Free Guest Shuttle Drop-Offs (for guests arriving from the NEW OUTFIELD ARRIVAL Car Parking, Kiss &amp; Ride drop-offs, and guests arriving on foot)<br><br>Guests who just parked their car (without Caravan Camping) will use the new Car Parking area and then arrive at the Main Entrance via a free shuttle. They will complete all entry procedures at Main Entrance. More on Car Parking below.</p>
+<p>See more on shuttle below<br><br>At Main Ticket Entrance, expect:</p>
+<ul><li>Scan festival ticket</li><li>Receive  festival wristband</li><li>Complete security and bag checks</li><li>Pay the €10 trash deposit (bring cash, no ATM on-site)</li><li>Receive a Care Booklet</li><li>Enter the festival</li></ul>
+<p>If you plan to leave the site, you must keep your festival wristband intact, and should expect to do another security check when reentering. <br></p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>04</span>PARKING PASSES</h3>
+            <div class="answer"><p>Parking passes are required and are sold out.  You can currently find them via resales on <a href="https://tixel.com/de/music-tickets/2026/07/17/whole-festival-2026" target="_blank" rel="noopener noreferrer">Tixel</a>. <br></p>
+<p>New for 2026: To reduce arrival congestion, we have introduced a new split arrival system:</p>
+<ul><li><a href="https://maps.app.goo.gl/tdCdrHhZLw6V5a2c7" target="_blank" rel="noopener noreferrer">NEW OUTFIELD ARRIVAL Car Parking </a>→ For guests parking a car for the weekend (no sleeping in vehicles).</li><li><a href="https://maps.app.goo.gl/zqKLKiBoDR81s6w2A" target="_blank" rel="noopener noreferrer">Caravan Camping Entrance </a>→ For guests sleeping in their vehicle or using their vehicle as part of their campsite setup.</li><li>Please follow signage carefully upon arrival and ensure you are heading to the correct entrance.<br><br><br>WHICH PASS DO I NEED?</li></ul>
+<p>CAR PARKING PASS: For guests arriving by car and parking their vehicle for the weekend in the NEW OUTFIELD ARRIVAL Car Parking. Sleeping in vehicles is not permitted with this pass. Car Parking Pass holders may leave and return throughout the weekend, subject to standard entry and security procedures. Please keep your festival wristband on at all times.</p>
+<p>For step-by-step arrival instructions, including the parking procedure and check-in at the Main Entrance, please see “ARRIVING BY CAR (PARKING FOR THE WEEKEND)” below.</p>
+<p>For information about travelling from the Car Parking to the Main Entrance, please see “On-Site Festival Guest Shuttle.”<br><a href="https://maps.app.goo.gl/tdCdrHhZLw6V5a2c7" target="_blank" rel="noopener noreferrer">Google Pin</a><br></p>
+<p>CARAVAN CAMPING PASS: Required if you plan to sleep in your vehicle or use it as part of your campsite setup (including standard cars). One pass per vehicle, not per person. Caravan Pass holders should plan to remain parked for the majority of the weekend, as in-and-out vehicle movement is not supported in the caravan area. If you need to leave earlier than Monday morning, alert the parking attendants while you are parking.</p>
+<p><a href="https://maps.app.goo.gl/zqKLKiBoDR81s6w2A" target="_blank" rel="noopener noreferrer">Google Pin</a></p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>05</span>On-Site Festival Guest Shuttle</h3>
+            <div class="answer"><p>To help guests move easily around the festival site, WHOLE operates a free guest shuttle service throughout the weekend.</p>
+<p>The shuttle connects key arrival, camping, accommodation, and festival areas, including:</p>
+<ul><li>Parking Lot of <a href="https://maps.app.goo.gl/osjTvC1as6oB2pcX7" target="_blank" rel="noopener noreferrer">Autohaus Hünsche</a>, which services the new  <a href="https://maps.app.goo.gl/Ti5cmHfAiYUAM7sPA?g_st=ic" target="_blank" rel="noopener noreferrer">OUTFIELD ARRIVAL Car Parking</a></li><li><a href="https://maps.app.goo.gl/Ez8YtjxF7JwTPRBC9" target="_blank" rel="noopener noreferrer">Fußgängerbrücke</a> (Footbridge) (closest stop for Accessible Camping and Glamping)</li><li><a href="https://maps.app.goo.gl/9qgtFqRpyPVTGdSb7" target="_blank" rel="noopener noreferrer">Main Ticket Entrance</a></li><li><a href="https://maps.app.goo.gl/6f8HrYyWGWfScAfSA" target="_blank" rel="noopener noreferrer">Peninsula</a> (Stage Area)</li></ul>
+<h4>Operating Hours</h4>
+<p>Starting Friday at 09:30, two free shuttle buses will operate continuously between key festival locations.</p>
+<p>Route (Friday 09:30–14:00)</p>
+<ul><li>Autohaus Hünsche / NEW OUTFIELD ARRIVAL Car Parking</li><li>Fußgängerbrücke</li><li>Main Ticket Entrance</li></ul>
+<p>Route (From Friday 14:00 throughout the weekend)</p>
+<ul><li>Autohaus Hünsche / NEW OUTFIELD ARRIVAL Car Parking</li><li>Fußgängerbrücke</li><li>Main Ticket Entrance</li><li>Peninsula (Stage Area)</li></ul>
+<p>The shuttle service runs throughout the weekend, connecting parking areas, camping areas, entrances, accommodation zones, and the festival grounds.</p>
+<p>Please note that brief interruptions may occasionally occur due to driver breaks, refueling, or other operational requirements.</p>
+<p>The shuttle service is wheelchair accessible.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>06</span>ARRIVING BY CAR &amp; PARKING FOR THE WEEKEND (New Update! Please read!) </h3>
+            <div class="answer"><p>ARRIVING BY CAR (NOT SLEEPING IN YOUR VEHICLE)</p>
+<p>New for 2026, guests arriving by car will first enter the NEW OUTFIELD ARRIVAL Car Parking, located across Bundesstraße 107 (B107) from Ferropolis.</p>
+<p>Google Maps Pin <br>NEW OUTFIELD ARRIVAL <br>Car Parking<br><a href="https://maps.app.goo.gl/Ti5cmHfAiYUAM7sPA?g_st=ic" target="_blank" rel="noopener noreferrer">[LINK]</a><br><br>Autohaus parking lot is where guests will board the free on-site shuttle to go to the Main Entrance.  More info on Free Shuttle below.<br><br>Autohaus Hünsche<br>Jüdenberger Hauptstraße 40<br>06773 Gräfenhainichen</p>
+<p>Upon arrival, follow staff instructions, show your Car Parking Pass, and park your vehicle.</p>
+<p>After parking, collect your belongings and follow staff instructions to safely cross the road to the shuttle pickup area at Autohaus Hünsche. For safety reasons, please do not walk along the road toward the Main Entrance.<br></p>
+<p>Starting Friday at 09:30, two free shuttle buses will run continuously between the NEW OUTFIELD ARRIVAL Car Parking, Fußgängerbrücke / Glamping, and the Main Entrance. From 14:00 Friday onward, the route is extended to include the Peninsula (stage area). Shuttle service continues throughout the weekend. More on shuttles below.</p>
+<p>Please note that festival check-in does not happen at the NEW OUTFIELD ARRIVAL Car Parking. The shuttle will bring you to the Main Entrance, where you will complete ticket scanning, security checks, wristband activation, and the €10 trash deposit.</p>
+<p><br>Car Pass holders may leave and return throughout the weekend, subject to standard entry and security checks. Please be sure to leave your wristband on, or you will not be able to reenter.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>07</span>KISS &amp; RIDE  + TAXI DROP OFFS</h3>
+            <div class="answer"><p>KISS &amp; RIDE + TAXI DROP OFFS</p>
+<p>If you are being dropped off by someone in a private vehicle (aka Kiss &amp; Ride), please use the <a href="https://maps.app.goo.gl/Ti5cmHfAiYUAM7sPA?g_st=ic" target="_blank" rel="noopener noreferrer">NEW OUTFIELD ARRIVAL Car Parking drop-off area. </a>Driver does NOT enter parking. Drop-off area only. Follow signage and our staff.<br></p>
+<p>Only licensed taxis may drop off directly at the Main Entrance. Your taxi will pull onto Ferropolisstrasse and follow the same route as the Bassliner shuttles to the Main Entrance.</p>
+<p><br>Local Taxis</p>
+<p>For last-minute journeys to or from Ferropolis, Gräfenhainichen or Dessau:</p>
+<p>Marion’s Taxi &amp; Mietwagenservice</p>
+<p>+49 1522 9549135 (mobile)</p>
+<p>+49 34953 23116</p>
+<p><br>Frank Sommerlatte Taxibetrieb</p>
+<p>+49 34904 20331</p>
+<p>Please note: Local taxi availability is limited during festival arrival and departure times. We recommend booking in advance where possible or using the Bassliner shuttle and public transport whenever you can.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>08</span>ARRIVING BY CARAVAN (SLEEPING IN YOUR VEHICLE)</h3>
+            <div class="answer"><p>Are you sleeping in your vehicle?</p>
+<p>Anyone planning to sleep in their vehicle, or use their vehicle as part of their campsite setup, must purchase a Caravan Camping Pass and enter via the Caravan Camping Entrance.</p>
+<p>This entrance functions similarly to the vehicle entrance used in previous years and is located on-site next to the main campground. When arriving from Bundesstraße 107 (B107), simply follow the signs marked CARAVAN CAMPING.</p>
+<p><a href="https://maps.app.goo.gl/zqKLKiBoDR81s6w2A" target="_blank" rel="noopener noreferrer">Google Pin</a></p>
+<p>Please note that a Caravan Camping Pass is required for any vehicle used for accommodation, including standard cars. One Caravan Camping Pass covers one vehicle, not one person.</p>
+<p>Caravan Pass holders should plan to remain parked for most of the weekend, as vehicle movement within the caravan area is generally not supported. If you know you’ll need to leave before Monday morning, please let the parking attendants know when you arrive so they can direct you to an appropriate parking location.<br></p>
+<h4>DRIVING &amp; SAFETY</h4>
+<p>Please plan ahead and ensure you have a sober driver for your journey to and from the festival. As with other large events, routine police traffic and sobriety checks may take place on roads surrounding Ferropolis.<br></p>
+<p>For full details about RV and vehicle camping conditions, facilities, and regulations, please see &quot;Planning to sleep / camp in your car / caravan?&quot;  <a href="https://www.wholefestival.com/faqs#guide-camping" target="_blank" rel="noopener noreferrer">Guide → Camp → RV / Vehicle Camping.</a></p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>09</span>Arriving by Bassliner Shuttle Bus </h3>
+            <div class="answer"><h4>Arriving by Bassliner Shuttle Bus</h4>
+<p>This is the #1 way we recommend getting to WHOLE. Bassliner is our official shuttle partner, offering direct routes from Berlin, Hamburg, Köln, Leipzig, Nürnberg, München, Dessau, and Gräfenhainichen.</p>
+<ul><li>Bassliner shuttles often sell out, so we recommend booking early.</li><li>Bassliner expects to add additional departures in early July after completing shuttle operations for other festivals. We cannot guarantee which routes or departure times will be added, so we recommend booking one of the currently available options rather than waiting for future releases.</li><li>Bassliner recently launched an improved website and booking experience.</li><li>Only the Dessau and Gräfenhainichen shuttle routes are wheelchair accessible.</li></ul>
+<p>For all other routes, foldable wheelchairs can often be transported in the luggage compartment, subject to available space. To ensure the smoothest possible journey, we strongly recommend contacting Bassliner directly before booking.</p>
+<p>Need More Flexibility?</p>
+<p>If your preferred Bassliner departure is sold out, we recommend taking a regional train to Gräfenhainichen and connecting from there. The shuttle ride from Gräfenhainichen to Ferropolis is short, affordable, and often offers more flexibility than direct festival shuttles.</p>
+<p>Simply use <a href="https://int.bahn.de/en/" target="_blank" rel="noopener noreferrer">DB Navigator</a> and search for “Gräfenhainichen” as your destination.</p>
+<p>When planning your journey, please leave enough time between your train arrival and Bassliner departure. Trains can occasionally run late, and a little buffer goes a long way toward a smooth, low-stress arrival.</p>
+<p><br>[As of June 17] Current Gräfenhainichen → Ferropolis shuttle availability includes:</p>
+<p>Friday</p>
+<ul><li>Currently there are departures approximately every hour from 11:00–18:00</li></ul>
+<p>Sunday</p>
+<ul><li>08:45</li><li>09:45</li><li>10:45</li></ul>
+<h4>Monday Returns</h4>
+<p>There is currently substantial return capacity from Ferropolis to Berlin Ostbahnhof on Monday, with departures available throughout the morning, afternoon, and evening until approximately 19:00.</p>
+<p>As always, we recommend booking sooner rather than later, particularly if you are traveling with a group of friends or planning onward connections.</p>
+<p>For specific questions about routes, accessibility, schedules, or bookings, please contact Bassliner directly: buero@bassliner.org</p>
+<p><a href="https://www.bassliner.org" target="_blank" rel="noopener noreferrer">Book via Bassliner</a><br></p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>10</span>Arriving by Train + Shuttle</h3>
+            <div class="answer"><p>Travel by regional Deutsche Bahn train to Dessau Hbf or Gräfenhainichen, then take a short Bassliner shuttle to the festival site. This is often the most flexible and affordable option, especially from Berlin or nearby regions.</p>
+<ul><li>Check Schedules: Check <a href="https://www.bahn.de/" target="_blank" rel="noopener noreferrer">DB website </a>or use the DB Navigator app for real-time updates.</li><li>Deutschlandticket: German residents can use their monthly pass on all regional trains (the RE7 runs regularly from Berlin to Dessau).</li><li>Group Travel: The <a href="https://www.vbb.de/tickets/gruppenkarten/brandenburg-berlin-ticket/" target="_blank" rel="noopener noreferrer">Brandenburg-Berlin-Ticket</a> is a great budget choice. For €36.50, up to five people can travel together for the day on all regional (RE, RB) and local S-Bahn/U-Bahn services.</li><li>Station Shuttles: <a href="https://bassliner.org/en/tours/whole-2026" target="_blank" rel="noopener noreferrer">Bassliner shuttle rides</a> from these stations to  Ferropolis  are short &amp; straightforward. These shuttle buses are wheelchair accessible.</li></ul>
+<p>A Note on Rail Works: Deutsche Bahn sometimes schedules last-minute track maintenance (as we experienced last year). We recommend checking your specific route a few days before you travel. We will do our best to communicate any major schedule changes that affect our festival-goers via our social channels and Telegram, so we can all get to the playground smoothly.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>11</span>Arriving by Bike </h3>
+            <div class="answer"><ul><li>Cycling is a great, green option</li><li>Bike racks are available at the campsite and festival entrance</li><li>Bikes are not allowed on the peninsula (stage area)</li><li>Use the Caravan Camping upon arrival</li><li>No Caravan Pass needed to enter there</li></ul></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>12</span>Arriving by Foot</h3>
+            <div class="answer"><p>Many people walk from Gräfenhainichen train station. Don’t walk to Main Entrance. Go to Autohaus Parking lot to take free on-site shuttle to Main Entrance.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="category" id="awareness-and-guidelines">
+        <div class="category-heading">
+          <p class="label">guide · 3 entries</p>
+          <h2>Awareness &amp; Guidelines</h2>
+        </div>
+        <div class="questions">
+          
+          <article class="qa">
+            <h3><span>01</span>AWARENESS</h3>
+            <div class="answer"><p>Awareness Team &amp; Support</p>
+<ul><li>An expanded Awareness Team made up of trained professionals is present throughout the festival</li><li>First Aid and paramedics are on-site at all times</li><li>An on-call psychologist is available for escalations and acute situations</li><li>Awareness Tents and support points are clearly marked on the festival map and app</li><li>If you or someone near you isn’t feeling well, physically or emotionally, seek help early. Don’t isolate in a tent or assume it will pass. Asking for support is part of participating responsibly.</li></ul>
+<p><br>Partying With Care<br><br>WHOLE is built on shared responsibility. We gather to experience pleasure, freedom, and connection , and that only works when care is practiced collectively.<br><br>Our Awareness &amp; Safety framework exists to support everyone on site, especially those from communities that are most often asked to carry risk elsewhere. Care is not an afterthought here; it is infrastructure.<br><br>Looking Out for One Another<br><br>Check in if someone seems disoriented, overwhelmed, or unsafe</p>
+<p>Step in when something doesn’t feel right, or alert staff immediately</p>
+<p>If you’re unsure, err on the side of care — our team is here to help, not judge<br></p>
+<p>Harm Reduction &amp; Personal Responsibility</p>
+<ul><li>Stay hydrated. Eat regularly. Rest when needed.</li><li>Pace yourself — this is a marathon, not a sprint.</li><li>As in any other club or public setting, you are expected to act responsibly and discreetly, respecting both people and place. Please be mindful of your surroundings — the festival isn’t a total free-for-all.</li><li>Reckless behavior puts yourself and others at risk and may result in removal from the site.</li><li>If you require refrigerated medication, please visit the Info Point upon arrival.<br><br><br></li></ul></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>02</span>COMMUNITY GUIDELINES</h3>
+            <div class="answer"><h4>How We Share This Space</h4>
+<p>WHOLE is a collective experience. These guidelines aren’t abstract values, this is the bare minimum that  we come to expect from one another. Care is not something provided to you, it is something we practice with together.</p>
+<p>WHOLE exists because queer communities have always known how to gather, protect, and imagine together. This weekend is no different.</p>
+<h4>GIVE WAY</h4>
+<ul><li>Make space for others, especially those from marginalized communities</li><li>Be aware of how much space you take up — physically, emotionally, and socially</li><li>Kindness and consideration are non-negotiable</li></ul>
+<h4>ASK, DON’T ASSUME</h4>
+<ul><li>Respect names, pronouns, and boundaries</li><li>Do not assume identity, background, desire, or access needs</li><li>What feels casual to you may feel unsafe or triggering to someone else</li></ul>
+<h4>CONSENT</h4>
+<ul><li>Consent is active, mutual, and enthusiastic</li><li>It applies to touch, conversation, photography, and sexual interaction</li><li>It can be withdrawn at any time</li><li>No explanation is required<br></li></ul>
+<p>If you witness or experience a violation of consent, contact the Awareness Team or a staff member immediately.</p>
+<h4>SET AN INTENTION</h4>
+<p>Festivals can be intense environments. Arriving with intention helps sustain the care we expect from one another.</p>
+<ul><li>Take time to ground yourself</li><li>Know your limits</li><li>Set personal boundaries and check in with yourself often.</li><li>Respect the boundaries of others</li></ul>
+<h4>ZERO TOLERANCE</h4>
+<p>WHOLE has zero tolerance for:</p>
+<ul><li>Harassment, discrimination, or violence</li><li>Racism, Islamophobia, antisemitism, transphobia, homophobia, misogyny, ableism, or fatphobia</li><li>Aggressive, threatening, or abusive behavior</li><li>Reckless behavior that puts yourself and others at risk</li></ul>
+<p>Anyone acting in ways that compromise the safety or dignity of others may be removed from the festival without refund.</p></div>
+          </article>
+
+          <article class="qa">
+            <h3><span>03</span>CAN I JOIN THE AWARENESS TEAM?</h3>
+            <div class="answer"><p>Thank you for your interest in supporting WHOLE through our Awareness Team. At the moment, enrollment for the Awareness Team is not open.</p>
+<p>When applications do open, we’ll share all details and next steps publicly. Please keep an eye on our social media channels for updates and announcements.</p>
+<p>We appreciate your care and interest in helping us hold a safer, more supportive space for everyone at WHOLE.</p></div>
+          </article>
+        </div>
+      </section>
+    <footer>
+      Scraped with Firecrawl discovery and generated from the structured WHOLE Festival FAQs & Guides page data. Original content belongs to WHOLE Festival.
+    </footer>
+  </main>
+</body>
+</html>

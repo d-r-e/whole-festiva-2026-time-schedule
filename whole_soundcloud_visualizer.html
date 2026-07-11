@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WHOLE Festival — SoundCloud lineup</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: dark; --bg:#101312; --panel:#191e1c; --line:#303a35; --text:#edf5ef; --muted:#9eaaa3; --accent:#b9ff65; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:linear-gradient(135deg,#101312,#17221c); color:var(--text); font:15px/1.4 "DM Sans",system-ui,sans-serif; }
+    main { max-width:1400px; margin:auto; padding:18px 14px 34px; }
+    h1 { margin:0 0 3px; font:600 clamp(27px,5vw,42px)/.95 "Space Grotesk",sans-serif; letter-spacing:-.065em; }
+    .subtitle { color:var(--muted); margin:0 0 22px; }
+    .toolbar { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:14px; }
+    input, select, button { background:var(--panel); color:var(--text); border:0; border-radius:7px; padding:9px 10px; font:inherit; }
+    input[type=search] { flex:1 1 260px; min-width:210px; }
+    button { cursor:pointer; } button:hover { background:#263029; }
+    .stats { color:var(--muted); margin:10px 0 15px; }
+    .genres { display:flex; flex-wrap:wrap; gap:7px; max-height:112px; overflow:auto; padding:2px 0 10px; }
+    .genre { display:flex; align-items:center; gap:6px; padding:6px 9px; border:1px solid var(--line); border-radius:999px; color:var(--muted); cursor:pointer; user-select:none; }
+    .genre:has(input:checked) { color:#101312; background:var(--accent); border-color:var(--accent); }
+    .genre input { accent-color:#101312; margin:0; }
+    .table-wrap { overflow:auto; border-radius:10px; background:rgba(25,30,28,.9); box-shadow:inset 0 0 0 1px rgba(255,255,255,.05); }
+    table { border-collapse:collapse; width:100%; min-width:0; }
+    th,td { padding:12px 13px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+    th { position:sticky; top:0; background:#202822; color:var(--muted); font:600 11px/1 "Space Grotesk",sans-serif; text-transform:uppercase; letter-spacing:.07em; }
+    tr:last-child td { border-bottom:0; } tr:hover td { background:#202822; }
+    .artist { color:var(--accent); font-weight:700; white-space:nowrap; }
+    .artist a { color:inherit; text-decoration:none; } .artist a:hover { text-decoration:underline; }
+    .sc-icon { width:17px; height:17px; margin-right:7px; vertical-align:-3px; border-radius:3px; }
+    .muted { color:var(--muted); } .count { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+    .tag { display:inline-block; margin:2px 4px 2px 0; padding:3px 7px; border:1px solid #455348; border-radius:999px; color:#c8d7cc; font-size:12px; }
+    .empty { padding:36px; text-align:center; color:var(--muted); }
+    .file { font-size:13px; color:var(--muted); }
+    body.embedded main { padding-top:12px; } body.embedded h1, body.embedded .subtitle { display:none; }
+    @media (max-width:700px) { thead { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); } tbody { display:grid; gap:1px; } tr { display:block; padding:12px 13px; border-bottom:1px solid var(--line); } tr:hover td { background:transparent; } td { display:block; padding:4px 0; border:0; } td::before { content:attr(data-label); display:block; margin-bottom:2px; color:var(--muted); font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; } td.artist::before { content:'Artist'; } .count { text-align:left; } }
+    @media (min-width:701px) { main { padding:30px 22px 50px; } table { min-width:850px; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>WHOLE Festival lineup</h1>
+  <p class="subtitle">SoundCloud artists · filter by genre · sort by followers</p>
+  <div class="toolbar">
+    <input id="search" type="search" placeholder="Search artist, description or city…">
+    <select id="sort" aria-label="Sort artists">
+      <option value="followers-desc">Followers: high to low</option>
+      <option value="followers-asc">Followers: low to high</option>
+      <option value="name-asc">Artist: A–Z</option>
+    </select>
+    <button id="clear">Clear filters</button>
+    <label class="file">Load CSV <input id="file" type="file" accept=".csv,text/csv"></label>
+  </div>
+  <div id="genres" class="genres" aria-label="Genre filters"></div>
+  <div id="stats" class="stats"></div>
+  <div class="table-wrap"><table><thead><tr><th>Artist</th><th>Genres</th><th>Background</th><th>SoundCloud followers</th></tr></thead><tbody id="rows"></tbody></table><div id="empty" class="empty" hidden>No artists match these filters.</div></div>
+</main>
+<script>
+  if (new URLSearchParams(location.search).has('embed')) document.body.classList.add('embedded');
+  const csvUrl = 'whole_soundcloud_artists.csv';
+  let artists = [], selectedGenres = new Set();
+  const $ = id => document.getElementById(id);
+  function parseCSV(text) {
+    const out=[], row=[]; let field='', quoted=false;
+    for (let i=0;i<text.length;i++) { const c=text[i], n=text[i+1];
+      if (quoted && c==='"' && n==='"') { field+='"'; i++; }
+      else if (c==='"') quoted=!quoted;
+      else if (c===',' && !quoted) { row.push(field); field=''; }
+      else if ((c==='\n' || c==='\r') && !quoted) { if(c==='\r'&&n==='\n') i++; row.push(field); field=''; if(row.some(x=>x)) out.push(row.splice(0)); }
+      else field+=c;
+    }
+    if (field.length || row.length) { row.push(field); out.push(row); }
+    const headers=out.shift() || [];
+    return out.map(r => Object.fromEntries(headers.map((h,i)=>[h,(r[i]||'').trim()] )));
+  }
+  function esc(s) { return String(s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  function genresOf(a) { return (a.genres||'').split(';').map(x=>x.trim()).filter(Boolean); }
+  function renderGenres() {
+    const all=[...new Set(artists.flatMap(genresOf))].sort((a,b)=>a.localeCompare(b));
+    $('genres').innerHTML=all.map(g=>`<label class="genre"><input type="checkbox" value="${esc(g)}">${esc(g)}</label>`).join('');
+    $('genres').querySelectorAll('input').forEach(x=>x.addEventListener('change',()=>{ x.checked?selectedGenres.add(x.value):selectedGenres.delete(x.value); render(); }));
+  }
+  function render() {
+    const q=$('search').value.toLowerCase().trim(), mode=$('sort').value;
+    let rows=artists.filter(a => { const hay=[a.artist,a.wholefestival_description,a.soundcloud_description,a.genres].join(' ').toLowerCase(); const gs=genresOf(a); return (!q||hay.includes(q)) && (!selectedGenres.size||[...selectedGenres].every(g=>gs.includes(g))); });
+    rows.sort((a,b)=> mode==='name-asc' ? a.artist.localeCompare(b.artist) : ((Number(b.soundcloud_followers)||-1)-(Number(a.soundcloud_followers)||-1))*(mode==='followers-asc'?-1:1));
+    $('stats').textContent=`Showing ${rows.length} of ${artists.length} artists · ${artists.filter(a=>a.soundcloud_followers).length} with follower counts`;
+    $('rows').innerHTML=rows.map(a=>{ const url=a.soundcloud_canonical_url||a.soundcloud_url; return `<tr><td class="artist" data-label="Artist">${url?`<a href="${esc(url)}" target="_blank" rel="noreferrer"><img class="sc-icon" src="https://soundcloud.com/favicon.ico" alt="SoundCloud">${esc(a.artist)}</a>`:esc(a.artist)}</td><td data-label="Genres">${genresOf(a).map(g=>`<span class="tag">${esc(g)}</span>`).join('')||'<span class="muted">—</span>'}</td><td data-label="Background">${esc(a.wholefestival_description||a.soundcloud_description||'—')}</td><td class="count" data-label="SoundCloud followers">${a.soundcloud_followers?Number(a.soundcloud_followers).toLocaleString():'—'}</td></tr>`; }).join('');
+    $('empty').hidden=rows.length>0;
+  }
+  async function load(text) { artists=parseCSV(text); selectedGenres.clear(); renderGenres(); render(); }
+  $('search').addEventListener('input',render); $('sort').addEventListener('change',render);
+  $('clear').addEventListener('click',()=>{ $('search').value=''; selectedGenres.clear(); $('genres').querySelectorAll('input').forEach(x=>x.checked=false); render(); });
+  $('file').addEventListener('change',e=>{ const f=e.target.files[0]; if(f) f.text().then(load); });
+  const embedded = document.getElementById('embedded-csv');
+  if (embedded) load(embedded.textContent);
+  else fetch(csvUrl).then(r=>r.ok?r.text():Promise.reject()).then(load).catch(()=>{ $('stats').textContent='Choose whole_soundcloud_artists.csv above when opening this file directly.'; });
+</script>
+</body></html>
