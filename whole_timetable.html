@@ -24,10 +24,9 @@
     .line { grid-column:2 / -1; border-top:1px solid rgba(58,73,62,.4); pointer-events:none; }
     .stage-bg { grid-row:2 / -1; border-right:1px solid rgba(58,73,62,.5); }
     .event { z-index:3; margin:2px 3px; min-height:27px; display:flex; overflow:hidden; background:#27332b; border:0; border-radius:6px; box-shadow:inset 0 0 0 1px rgba(255,255,255,.05); } .event:hover { background:#324035; }
-    .event.has-listeners { --heat-background:hsl(var(--heat-hue) var(--heat-saturation) var(--heat-light)); background:var(--heat-background); border-color:hsl(var(--heat-hue) var(--heat-saturation) calc(var(--heat-light) + 12%)); color:#fff; } .event.has-listeners:hover { filter:brightness(1.12); } @supports (color:contrast-color(red)) { .event.has-listeners,.event.has-listeners .event-star { color:contrast-color(var(--heat-background)); } }
-    .event-card { flex:1; min-width:0; padding:5px 5px 5px 3px; color:inherit; background:transparent; border:0; border-radius:0; text-align:left; font:inherit; cursor:pointer; } .event-card:hover { border:0; }
-    .event-star { width:27px; flex:0 0 27px; padding:4px 0; color:var(--muted); background:transparent; border:0; border-radius:0; font-size:15px; cursor:pointer; } .event-star:hover { color:var(--accent); border:0; }
-    .event.selected { background:var(--accent); color:var(--accent-dark); box-shadow:none; font-weight:700; } .event.selected .event-star { color:var(--accent-dark); }
+    .event.has-listeners { --heat-background:hsl(var(--heat-hue) var(--heat-saturation) var(--heat-light)); background:var(--heat-background); border-color:hsl(var(--heat-hue) var(--heat-saturation) calc(var(--heat-light) + 12%)); color:#fff; } .event.has-listeners:hover { filter:brightness(1.12); } @supports (color:contrast-color(red)) { .event.has-listeners { color:contrast-color(var(--heat-background)); } }
+    .event-card { flex:1; min-width:0; width:100%; padding:5px 5px 5px 7px; color:inherit; background:transparent; border:0; border-radius:0; text-align:left; font:inherit; cursor:pointer; } .event-card:hover { border:0; }
+    .event.selected { background:var(--accent); color:var(--accent-dark); box-shadow:none; font-weight:700; }
     .event.group-member { margin-right:30px; } .collective-rail { z-index:4; width:25px; justify-self:end; align-self:stretch; margin:2px 2px; padding:4px 3px; color:var(--accent); background:rgba(8,12,10,.88); border:0; border-left:2px solid var(--accent); border-radius:0 5px 5px 0; font:600 10px/1 "Space Grotesk",sans-serif; letter-spacing:.04em; text-transform:uppercase; cursor:pointer; writing-mode:vertical-rl; overflow:hidden; text-overflow:ellipsis; } .collective-rail:hover { color:var(--accent-dark); background:var(--accent); }
     .event .name { display:block; overflow:hidden; text-overflow:ellipsis; white-space:normal; }
     .event.hidden { display:none; } .empty { padding:45px 15px; color:var(--muted); text-align:center; }
@@ -98,8 +97,8 @@ function renderSchedule() {
     const el=document.createElement('div'); el.className=`event ${active?'selected':''} ${emphasized?'has-listeners':''} ${grouped?'group-member':''} ${hidden?'hidden':''}`;
     if(emphasized) { el.style.setProperty('--heat-light',`${23+heat*43}%`); el.style.setProperty('--heat-saturation',`${40+heat*38}%`); }
     el.style.gridColumn=stages.indexOf(e.stage)+2; el.style.gridRow=`${row}/span ${span}`; el.title=`${e.time}${e.end?` – ${e.end}`:''} · ${e.stage} · ${e.artist}${e.collective?` · ${e.collective}`:''}`;
-    el.innerHTML=`<button class="event-star" aria-label="${active?'Remove':'Add'} ${escape(e.artist)} ${active?'from':'to'} my schedule">${active?'★':'☆'}</button><button class="event-card"><span class="name">${escape(e.artist)}</span></button>`;
-    el.querySelector('.event-star').onclick=()=>{const id=idFor(e); selected.has(id)?selected.delete(id):selected.add(id); save(); render();}; el.querySelector('.event-card').onclick=()=>showDetail(e); grid.append(el);
+    el.innerHTML=`<button class="event-card"><span class="name">${escape(e.artist)}</span></button>`;
+    el.querySelector('.event-card').onclick=()=>showDetail(e); grid.append(el);
   });
   schedule.append(grid); const first=Math.min(...dayEvents.map(e=>minutes(e.time))); requestAnimationFrame(()=>{schedule.scrollTop=Math.max(0,Math.floor(first/10)*11-20);});
 }
